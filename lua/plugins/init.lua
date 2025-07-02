@@ -1,7 +1,7 @@
 return {
   {
     "stevearc/conform.nvim",
-    -- event = 'BufWritePre', -- uncomment for format on save
+    event = "BufWritePre", -- uncomment for format on save
     opts = require "configs.conform",
   },
 
@@ -15,6 +15,14 @@ return {
 
   -- test new blink
   -- { import = "nvchad.blink.lazyspec" },
+  {
+    "tikhomirov/vim-glsl",
+    config = function()
+      require "configs.lazy"
+    end,
+    event = "VimEnter",
+    opts = {},
+  },
 
   -- {
   -- 	"nvim-treesitter/nvim-treesitter",
@@ -25,4 +33,5 @@ return {
   -- 		},
   -- 	},
   -- },
+  -- { import = "nvchad.blink.lazyspec" }
 }
