@@ -15,4 +15,4 @@ vim.api.nvim_create_autocmd("BufRead", {
   end,
 })
 
-vim.o.shell = "powershell"
+-- vim.o.shell = "powershell"
